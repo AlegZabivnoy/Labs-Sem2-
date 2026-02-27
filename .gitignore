@@ -1,0 +1,9 @@
+node_modules/
+.vscode/
+*.log
+npm-debug.log*
+.DS_Store
+dist/
+.env
+config.js
+src/config.js

@@ -1,0 +1,25 @@
+{
+	"name": "labs-sem2",
+	"version": "1.0.0",
+	"description": "Semester 2 programming labs",
+	"main": "src/index.js",
+	"exports": {
+		".": "./src/index.js"
+	},
+	"scripts": {
+		"start": "node task2/day-generator.js",
+		"task2": "node task2/day-generator.js",
+		"test": "echo \"No tests configured\" && exit 0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/AlegZabivnoy/Labs-Sem2-.git"
+	},
+	"keywords": [
+		"labs",
+		"javascript",
+		"university"
+	],
+	"author": "",
+	"license": "MIT"
+}
