@@ -1,0 +1,14 @@
+{
+	"name": "task2-example",
+	"version": "1.0.0",
+	"description": "Example project demonstrating labs-sem2 library usage",
+	"main": "day-generator.js",
+	"scripts": {
+		"start": "node day-generator.js"
+	},
+	"dependencies": {
+		"labs-sem2": "file:.."
+	},
+	"author": "Ostanin Oleksandr",
+	"license": "MIT"
+}

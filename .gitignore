@@ -1,9 +1,10 @@
 node_modules/
-.vscode/
+logs/
 *.log
 npm-debug.log*
-.DS_Store
-dist/
 .env
-config.js
-src/config.js
+.env.local
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

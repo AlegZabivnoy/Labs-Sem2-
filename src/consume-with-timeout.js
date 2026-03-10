@@ -12,7 +12,7 @@ function consumeWithTimeout(iterator, seconds, onValue = (value) => console.log(
         onValue(value);
     }
 
-    console.log("\n[Done] Timeout reached.");
+    console.log("\n[Done] Timeout reached");
 }
 
 module.exports = {
