@@ -1,4 +1,4 @@
-function macPromise(array, iteratee, {signal} = {}) {
+function mapPromise(array, iteratee, {signal} = {}) {
     return new Promise((resolve, reject) => {
 
         if (signal?.aborted) {
@@ -17,3 +17,5 @@ function macPromise(array, iteratee, {signal} = {}) {
         Promise.all(promises).then(resolve).catch(reject);
     })
 }
+
+module.exports = mapPromise;

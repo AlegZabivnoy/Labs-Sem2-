@@ -17,3 +17,5 @@ function mapCallback(array,iteratee,finalCallback) {
         });
     });
 }
+
+module.exports = mapCallback;
