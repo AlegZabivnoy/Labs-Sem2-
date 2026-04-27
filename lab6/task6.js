@@ -23,7 +23,7 @@ async function generateData() {
 async function* dataProducer(data){
     const fileStream = fs.createReadStream(data, { encoding: 'utf8' });
 
-    fileStream.on('errpr', (err) => {
+    fileStream.on('error', (err) => {
         fileStream.destroy();
         throw new Error(`Error while creating data stream: ${err}`);
     });
