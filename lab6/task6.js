@@ -43,3 +43,26 @@ async function* dataProducer(data){
         throw err;
     }
 }
+
+async function processLargeData() {
+    console.log(`Processing data...`);
+    let processedData = 0;
+
+    try {
+        for await (const line of dataProducer(fileName)) {
+            processedData++;
+        }
+        console.log(`Processing data is finished: ${processedData}`);
+
+    } catch(err) {
+        console.error(`Error while creating data stream`);
+        console.error(`Details: ${err}`);
+        console.log(`Processed data before crash: ${processedData}`);
+    }
+}
+
+async function run () {
+    await generateData();
+    await processLargeData();
+}
+run();
